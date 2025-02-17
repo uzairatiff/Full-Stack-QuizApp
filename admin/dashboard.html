@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <nav class="bg-gray-200 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600 hover-highlight">UzairAtif Quiz</a>
+            <div class="space-x-4 mr-[130px] gap-5">
+                <a href="../auth/signup.html"
+                    class="text-gray-600     hover:underline    hover:text-indigo-500 font-medium">SignUp</a>
+                <a href="../index.html"
+                    class="text-gray-600 hover:text-indigo-500 hover:underline font-medium">SignIn</a>
+                <a href="./quizlist.html"
+                    class="text-gray-600 hover:text-indigo-500 hover:underline font-medium">Quiz History</a>
+                <a href="./home.html"
+                    class="text-gray-600 hover:text-indigo-500 hover:underline font-medium">Home</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <h1 class="text-7xl text-indigo-700 font-semibold  font-sans text-center mt-24">Make A Quiz For Your <br>
+        <h2 class="text-6xl text-center font-sans mt-4 font-semibold">IN MINUTES</h2>
+    </h1>
+    <h1 class="text-5xl font-medium font-sans ml-12 mt-32">Fill input feilds below.</h1>
+    <hr class="h-1 w-[70%] bg-blue-900 ml-16 mt-4">
+
+    <div class="h-[1150px] w-[540px] shadow-2xl rounded-lg bg-gray-200 m-auto border-[1px] border-black mt-16">
+        <label class="text-xl ml-8 block mt-12" for="">1.  Quiz Category</label>
+        <input id="Quizcategory" placeholder="quiz category"
+            class="h-[50px] rounded-md border-[2px] placeholder:text-black placeholder:pl-7 text-xl text-black duration-300 hover:text-white mt-4  ml-4 border-blue-700 w-[470px] hover:border-none hover:bg-slate-800 "
+            type="text">
+
+        <label class="text-xl ml-8 block mt-6" for="">2.  Quiz Title</label>
+        <input id="QuizTitle" placeholder="quiz title"
+            class="h-[50px] rounded-md border-[2px] placeholder:text-black placeholder:pl-7 text-xl text-black duration-300 hover:text-white mt-3  ml-4 border-blue-700 w-[470px] hover:border-none hover:bg-slate-800 "
+            type="text">
+
+            <hr class="bg-black mt-3 h-[3px] m-auto absolute w-[538px]">
+
+        <label class="text-xl ml-8 block mt-6" for="">3. 1 Question</label>
+        <input id="QuestionText" placeholder="1 question"
+            class="h-[50px] rounded-md border-[2px] placeholder:text-black placeholder:pl-7 text-xl text-black duration-300 hover:text-white mt-3  ml-4 border-blue-700 w-[470px] hover:border-none hover:bg-slate-700 "
+            type="text">
+
+            <label class="text-xl ml-8 block mt-6" for="">4.   Option A</label>
+            <input id="OptionA" placeholder="Option A" class="h-[50px] rounded-md border-[2px] placeholder:text-black placeholder:pl-7 text-xl text-black duration-300 hover:text-white mt-3  ml-4 border-blue-700 w-[470px] hover:border-none hover:bg-slate-700 " type="text">
+
+            <label class="text-xl ml-8 block mt-6" for="">5.  Option B</label>
+            <input id="OptionB" placeholder="Option B" class="h-[50px] rounded-md border-[2px] placeholder:text-black placeholder:pl-7 text-xl text-black duration-300 hover:text-white mt-3  ml-4 border-blue-700 w-[470px] hover:border-none hover:bg-slate-700 " type="text">        
+
+            <label class="text-xl ml-8 block mt-6" for="">6.  Option C</label>
+            <input id="OptionC" placeholder="Option C" class="h-[50px] rounded-md border-[2px] placeholder:text-black placeholder:pl-7 text-xl text-black duration-300 hover:text-white mt-3  ml-4 border-blue-700 w-[470px] hover:border-none hover:bg-slate-700 " type="text">
+
+            <label class="text-xl ml-8 block mt-6" for="">7.  Option D</label>
+            <input id="OptionD" placeholder="Option D" class="h-[50px] rounded-md border-[2px] placeholder:text-black placeholder:pl-7 text-xl text-black duration-300 hover:text-white mt-3  ml-4 border-blue-700 w-[470px] hover:border-none hover:bg-slate-700 " type="text">
+
+            <label class="text-xl ml-8 block mt-6" for="">8. Correct Answer</label>
+            <input id="CorrectAnswer" placeholder="Correct Answer" class="h-[50px] rounded-md border-[2px] placeholder:text-black placeholder:pl-7 text-xl text-black duration-300 hover:text-white mt-3  ml-4 border-blue-700 w-[470px] hover:border-none hover:bg-slate-700 " type="text">
+
+            <button onclick="NextQuesBtn()" class="h-[50px] text-white text-xl w-[200px] bg-teal-700 hover:bg-blue-950 duration-200 rounded-md mt-11 ml-80">Next Question</button>
+            <button onclick="CreateQuiz()" class="h-[60px] text-white text-xl w-[400px] bg-gray-900 hover:bg-blue-950 duration-200 rounded-md mt-11 ml-[70px]">Create Quiz</button>
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+<script type="module" src="dashboard.js"></script>
+
+</html>

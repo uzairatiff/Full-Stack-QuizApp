@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quizApp.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="quiz-title">Quiz-App</h1>
+        <div class="quiz">
+            <h2 id="questionElement" class="question">Question goes here.</h2>
+            <ul id="optionsElement" class="options-list">
+                <li class="option">Option 1</li>
+                <li class="option">Option 2</li>
+                <li class="option">Option 3</li>
+                <li class="option">Option 4</li>
+            </ul> 
+            <button id="next-btn" onclick="nextQues()">Next</button>
+        </div>
+    </div><br>
+    <div id="resultContainer" class="hidden">
+    <ul id="scores" class="h-[360px] w-[600px] border-[1px]  border-black rounded-md">
+        <li class="text-center mt-4 text-5xl font-semibold">Quiz Results</li>
+        <li class="text-4xl mt-10 ml-8 font-medium">Quiz Title :</li>
+        <li class="text-4xl mt-4 ml-8 font-medium">QuizScore : </li>
+        <li class="text-4xl mt-4 ml-8 font-medium">Total Question : </li>
+        <li class="text-4xl mt-4 ml-8 font-medium">Wrong Question : </li>
+    </ul>
+    </div>
+
+
+
+    <script type="module" src="quizApp.js"></script>
+</body>
+</html>

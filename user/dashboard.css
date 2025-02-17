@@ -1,0 +1,47 @@
+/* Quiz Card Container */
+.quiz-card {
+    border-radius: 0.5rem; /* rounded-lg */
+    background-color: #f3f4f6; /* bg-gray-100 */
+    margin-top: 6rem; /* mt-24 */
+    margin-left: 4rem; /* ml-16 */
+    transition: margin-bottom 0.3s; /* hover:mb-[10px] duration-300 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+    padding: 1.5rem; /* p-6 */
+    width: 20rem; /* w-80 */
+    text-align: center; /* text-center */
+  }
+  
+  /* Hover Effect for Quiz Card */
+  .quiz-card:hover {
+    margin-bottom: 0.625rem; /* hover:mb-[10px] */
+  }
+  
+  /* Quiz Heading */
+  .quiz-heading {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #2563eb; /* text-blue-600 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  /* Quiz Category */
+  .quiz-category {
+    color: #374151; /* text-gray-700 */
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+  /* Toggle Button */
+  .toggle-button {
+    background-color: #ef4444; /* bg-red-500 */
+    color: #ffffff; /* text-white */
+    padding: 0.5rem 1.5rem; /* px-6 py-2 */
+    border-radius: 9999px; /* rounded-full */
+    font-weight: 600; /* font-semibold */
+    border: none; /* Reset default button border */
+    cursor: pointer; /* Add pointer cursor for better UX */
+  }
+  
+  /* Hover Effect for Toggle Button */
+  .toggle-button:hover {
+    opacity: 0.9; /* Optional: Add hover effect */
+  }

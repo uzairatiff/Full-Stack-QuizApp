@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body onload="getScoreListing()">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-64 h-screen bg-gradient-to-b from-purple-900 to-purple-700 shadow-lg flex flex-col">
+            <!-- Sidebar Header -->
+            <div class="p-6 text-white text-center border-b border-purple-800">
+                <h1 class="text-2xl font-bold">Quiz App</h1>
+                <p class="text-sm text-purple-200">Your Learning Companion</p>
+            </div>
+            <!-- Sidebar Options -->
+            <div class="flex-1 p-4">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="../dashboard.html" class="flex items-center p-3 text-purple-200 hover:bg-purple-800 hover:text-white rounded-lg transition duration-200">
+                            <span class="font-medium">DashBoard</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Sidebar Footer -->
+            <div class="p-4 text-center text-purple-200 border-t border-purple-800">
+                <p class="text-sm">© 2025 Quiz App</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="ml-36 mt-7">
+            <h1 class="text-6xl font-semibold">Score List</h1>
+
+            <!-- Score List Container -->
+           <table id="scoreTable" class="border-[1px] mt-20 h-52 w-[700px] text-xl border-black">
+            <tr class="border-[1px] border-black">
+                <td class="border-black pl-1 border-[1px] w-[100px]">No#</td>
+                <td class="border-black pl-1 border-[1px]  w-[100px]">Name</td>
+                <td class="border-black pl-1 border-[1px]  w-[100px]">Quiz Name</td>
+                <td class="border-black pl-1 border-[1px]  w-[100px]">Score</td>
+                <td class="border-black pl-1 border-[1px]  w-[100px]">Wrong Ans</td>
+                <td class="border-black pl-1 border-[1px]  w-[100px]">Total Question</td>
+                <td class="border-black pl-1 border-[1px]  w-[100px]    ">Percentage%</td>
+            </tr>
+
+            <!-- <td class="border-black border-[1px] w-[100px]">1</td>
+            <td class="border-black border-[1px]">uzair</td>
+            <td class="border-black border-[1px]">mathematics</td>
+            <td class="border-black border-[1px]">4</td>
+            <td class="border-black border-[1px]">2</td>
+            <td class="border-black border-[1px]">6</td>
+            <td class="border-black border-[1px]">75%</td> -->
+
+           </table>
+        </div>
+    </div>
+</body>
+<script type="module" src="scoreList.js"></script>
+</html>

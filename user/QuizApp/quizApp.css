@@ -1,0 +1,97 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(to right, #0000AE, #84A4FC); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Parent Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything */
+    gap: 20px; /* Adds space between quiz and black box */
+    background-color: black;
+}
+
+/* Quiz Container */
+.quiz-container {
+    margin-top: 100px;
+    margin-left: -100px;
+    width: 750px;
+    height: 540px;
+    background-color: rgb(210, 230, 223);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Quiz Title */
+.quiz-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Question Styling */
+.question {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #444;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Options List */
+.options-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 20px;
+}
+
+/* Option Styling */
+.option {
+    border: 1px solid #000;
+    width: 83%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #4A5568;
+    color: white;
+}
+
+/* Next Button */
+#next-btn {
+    display: none;
+    background-color: #000080;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    transition: background-color 0.20s ease;
+}
+
+.next-button:hover {
+    background-color: #001F3F;
+}
+
+

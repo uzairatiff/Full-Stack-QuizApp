@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="quizlist.css">
+
+    <style>
+        /* Custom styles for the toggle button */
+        .toggle-button {
+          transition: background-color 0.3s ease, color 0.3s ease;
+        }
+      </style>
+
+</head>
+<body onload="GetQuizList()">
+
+    <nav class="bg-gray-200 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600 hover-highlight">UzairAtif Quiz</a>
+            <div class="space-x-4 mr-[130px] gap-5">
+                <a href="../auth/signup.html"
+                    class="text-gray-600     hover:underline    hover:text-indigo-500 font-medium">SignUp</a>
+                <a href="../index.html"
+                    class="text-gray-600 hover:text-indigo-500 hover:underline font-medium">SignIn</a>
+                <a href="./dashboard.html"
+                    class="text-gray-600 hover:text-indigo-500 hover:underline font-medium">DashBoard</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <h1 class="text-center font-semibold  font-sans mt-12 text-5xl">Quiz History</h1>
+<div id="parent">
+<!-- <div class="quiz-card">
+  <h1 class="quiz-heading">Quiz Heading</h1>
+  
+  <p class="quiz-category">Quiz Category</p>
+  
+  <button onclick="togglebutton()" class="toggle-button">Inactive</button>
+</div> -->
+</div>
+
+</body>
+ <script type="module" src="quizlist.js">
+
+  
+
+ </script>
+</html>
